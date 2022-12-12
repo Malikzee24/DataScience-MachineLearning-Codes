@@ -1,7 +1,8 @@
 import numpy as np
 from sklearn import datasets, linear_model
 from sklearn.metrics import mean_squared_error
- # Only checking Mean Squared Error, Coeffiecent and Intercept values to determine accuracy of model:
+
+# Only checking Mean Squared Error, Coeffiecent and Intercept values to determine accuracy of model:
 
 diabetes = datasets.load_diabetes()
 
