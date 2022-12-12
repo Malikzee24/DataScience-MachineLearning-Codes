@@ -4,20 +4,25 @@ from sklearn import datasets, linear_model
 from sklearn.metrics import mean_squared_error
 
 diabetes = datasets.load_diabetes()
+
 """
 #To see the keys of data:
-#print(diabetes.keys())
+print(diabetes.keys())
 #dict_keys(['data', 'target', 'frame', 'DESCR', 'feature_names', 'data_filename', 'target_filename', 'data_module'])
---------------------------------------------------------------------
-# To check total given data:
-#print(diabetes.data)
+
 ---------------------------------------------------------------------
+# To check total given data:
+print(diabetes.data)
+
+---------------------------------------------------------------------
+
 #To check specific key: Print name of available key
-#print(diabetes.DESCR)
-#print(diabetes.target)
+print(diabetes.DESCR)
+print(diabetes.target)
 print(diabetes.feature_names)
---------------------------------------------------------------------
+---------------------------------------------------------------------
 """
+
 # Printing Data from key in coloumn of indexing number 2:
 diabetes_X = diabetes.data[:,np.newaxis, 2]
 #print(diabetes_X)
