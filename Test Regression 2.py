@@ -4,20 +4,7 @@ from sklearn.metrics import mean_squared_error
  # Only checking Mean Squared Error, Coeffiecent and Intercept values to determine accuracy of model:
 
 diabetes = datasets.load_diabetes()
-"""
-#To see the keys of data:
-#print(diabetes.keys())
-#dict_keys(['data', 'target', 'frame', 'DESCR', 'feature_names', 'data_filename', 'target_filename', 'data_module'])
---------------------------------------------------------------------
-# To check total given data:
-#print(diabetes.data)
----------------------------------------------------------------------
-#To check specific key: Print name of available key
-#print(diabetes.DESCR)
-#print(diabetes.target)
-print(diabetes.feature_names)
---------------------------------------------------------------------
-"""
+
 # Printing Data from key in coloumn of indexing number 2:
 diabetes_X = diabetes.data
 #print(diabetes_X)
@@ -48,6 +35,10 @@ print("Mean Squared Error is:", mean_squared_error(diabetes_Y_test, diabetes_Y_p
 print("Weights", model.coef_)
 print("Intercept", model.intercept_)
 
-#Mean Squared Error is: 2561.320427728385
-#Weights [941.43097333]
-#Intercept 153.39713623331644
+
+# Result is much accurate then previous Test Regression.py file. So Test Regression2.py is more accurate due to adding all features of data.
+
+#Output is :
+#Mean Squared Error is: 2004.2629212944946
+#Weights [  -1.16678648 -237.18123633  518.31283524  309.04204042 -763.10835067  458.88378916   80.61107395  174.31796962  721.48087773   79.1952801 ]
+#Intercept 153.05824267739402
