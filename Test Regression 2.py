@@ -5,7 +5,7 @@ from sklearn.metrics import mean_squared_error
 
 diabetes = datasets.load_diabetes()
 
-# Printing Data from key in coloumn of indexing number 2:
+# Printing All Data from keys in coloumn. All features data included. 
 diabetes_X = diabetes.data
 #print(diabetes_X)
 
@@ -21,12 +21,13 @@ diabetes_Y_test = diabetes.target[-20:]
 model = linear_model.LinearRegression()
 
 # Fitting The Data : it means with help of data we create a line and that line will save in linear model known as "Fitting The Data"
+
 # 1st: Fitting Data Line in Training of X & Y data:
 model.fit(diabetes_X_train, diabetes_Y_train)
 
 #2nd: Predicting the Data by Testing of X & Y data: (Note: Predicting the data gives right, wrong, less acurate or almost close value)
-# (Note: Predicting the data gives right, wrong, less acurate or almost close value. It depends given features of data)
 diabetes_Y_predicted = model.predict(diabetes_X_test)
+# (Note: Predicting the data gives right, wrong, less acurate or almost close value. It depends on given features of data)
 
 # Print mean squared error by help of mean_squared_error library via sklearn.
 print("Mean Squared Error is:", mean_squared_error(diabetes_Y_test, diabetes_Y_predicted))
