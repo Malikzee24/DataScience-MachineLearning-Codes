@@ -59,3 +59,12 @@ plt.scatter(diabetes_X_test, diabetes_Y_test)
 #Plotting Line:
 plt.plot(diabetes_X_test, diabetes_Y_predicted)
 plt.show()
+
+
+#Note: We had taken only one feature data to see regression line of data.
+
+#OUTPUT:
+#Mean Squared Error is: 2561.320427728385
+#Weights [941.43097333]
+#Intercept 153.39713623331644
+
